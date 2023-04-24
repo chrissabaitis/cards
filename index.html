@@ -12,19 +12,23 @@
 	<style>
 		.card-background {
 			background: url('https://img.freepik.com/premium-photo/vertical-grey-paper-surface-texture_271293-748.jpg?w=1060');
+			background-repeat: no-repeat;
+		 	background-size: stretch;
 		}
 
 		.party-font {
-		  font-family: Castoro;
+		  /*font-family: Castoro;*/
+		  font-size: 2.5em;
 	  	}
 	  	.title-font {
 	  		font-family: 'Old Standard TT', serif;
+	  		font-size: 3.5em;
 	  	}
 	</style>
 </header>
 
-<div style="margin: 5%">
-	<div class="uk-card uk-card-default uk-width-1-2@m uk-card-hover card-background" >
+<div style="margin: 10%">
+	<div class="uk-card uk-card-default uk-card-hover card-background" >
 	    <div class="uk-card-header">
 	        <div class="uk-grid-small uk-flex-middle" uk-grid>
 		    	<div class="uk-card-media-top">
@@ -40,8 +44,14 @@
 	    	<h3 class="uk-card-title uk-margin-remove-bottom title-font" style="text-align: center;">A BIRTHDAY & GRADUATION CELEBRATION</h3>
 	    </div>
 	    <div class="uk-card-footer" style="text-align: center;">
-	        <a href="#" class="uk-button uk-button-text"><p class="uk-text-meta uk-margin-remove-top"><time datetime="2023-05-12T20:30:00">May 12, 2023 &middot; 8:30PM</time></p>
-	        <p>address<br/>Upper West Side</p></a>
+	        <a href="#" class="uk-button uk-button-text">
+	        	<p class="uk-text-meta uk-margin-remove-top party-font">
+	        		<time datetime="2023-05-12T20:30:00">May 12, 2023 &middot; 8:30PM</time>
+	        	</p>
+		        <p class="party-font">
+		        	address<br/>Upper West Side
+		        </p>
+		    </a>
 	    </div>
 	</div>
 </div>
