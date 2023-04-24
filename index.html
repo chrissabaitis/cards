@@ -18,7 +18,8 @@
 		}
 
 		.card-background {
-			background: url('https://img.freepik.com/premium-photo/vertical-grey-paper-surface-texture_271293-748.jpg?w=1060');
+			/*background: url('https://img.freepik.com/premium-photo/vertical-grey-paper-surface-texture_271293-748.jpg?w=1060');*/
+			background:  url('./balloons.png');
 			background-repeat: no-repeat;
 		 	background-size: cover;
 		}
@@ -41,10 +42,10 @@
 			    <div class="uk-card-header">
 			        <div class="uk-grid-small uk-flex-middle" uk-grid>
 				    	<div class="uk-card-media-top">
-					        <img src="https://im01.itaiwantrade.com/60a71c50-cd9a-43e2-803e-15ba8be89f89/Mix_Colors_Balloons.jpg" width="" height="" alt="">
+					        <!-- <img src="https://im01.itaiwantrade.com/60a71c50-cd9a-43e2-803e-15ba8be89f89/Mix_Colors_Balloons.jpg" width="" height="" alt=""> -->
 					    </div>
-			            <div class="uk-width-expand">
-			                <p class="uk-margin-remove-bottom party-font" style="text-align:center">PLEASE JOIN ME FOR
+			            <div class="uk-width-expand" style="padding-top: 40%">
+			                <p class="uk-margin-remove-bottom party-font" style="text-align:center" id="joinMe">PLEASE JOIN ME FOR
 			DRINKS, MUSIC, AND CAKE FOR</p>
 			            </div>
 			        </div>
@@ -66,3 +67,16 @@
 		</div>
 	</div>
 </body>
+
+<foot>
+	<script>
+		const params = new URLSearchParams(window.location.search);
+		const name = params.get('name')
+		// updateJoinMe(name)
+		
+		function updateJoinMe(name){
+			const joinMe = document.getElementById("joinMe")
+			joinMe.innerHTML = name;
+		}
+	</script>
+</foot>
